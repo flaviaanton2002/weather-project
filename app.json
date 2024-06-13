@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "weatherApp",
-    "slug": "weatherApp",
+    "name": "weather-project",
+    "slug": "weather-project",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -12,7 +12,12 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "This app requires your location while you are using it to provide better service.",
+        "NSLocationAlwaysUsageDescription": "This app needs your location at all times to track your activities even when you are not using the app.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "This app needs your location both when you are using it and when you are not to provide continuous tracking."
+      }
     },
     "android": {
       "adaptiveIcon": {
